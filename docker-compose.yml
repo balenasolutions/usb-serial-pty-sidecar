@@ -1,0 +1,16 @@
+version: '2.4'
+
+services:
+  sidecar:
+    build: ./sidecar
+    privileged: true
+    volumes:
+      - ipc-sockets:/ipc
+
+  app:
+    build: ./app
+    volumes:
+      - ipc-sockets:/ipc
+
+volumes:
+  ipc-sockets:

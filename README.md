@@ -1,5 +1,7 @@
 # USB Serial Access via Privileged Sidecar 
 
+> [!WARNING]
+> **This is a demo and proof-of-concept.** It is intended to showcase the pattern, not serve as production-ready code. Before deploying in a production environment, you should carefully review the security implications of the privileged sidecar, add robust error handling and reconnection logic, harden the socket permissions, and test thoroughly against your specific hardware and failure scenarios.
 
 This repository demonstrates a pattern for accessing physical USB serial devices (such as FTDI chips, USB-to-RS485 adapters, or Zigbee dongles) inside a multi-container balenaOS application.
 
